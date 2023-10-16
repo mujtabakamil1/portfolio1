@@ -1,4 +1,9 @@
 @media screen and (min-width: 375px) {
+  body {
+    width: 1440px;
+    box-sizing: border-box;
+  }
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -8,7 +13,7 @@
   .logo {
     color: var(--primary-b-400, #6070ff);
     text-align: center;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -16,7 +21,10 @@
   }
 
   .header {
+    border-bottom-left-radius: 130px;
+    background-color: #fff;
     background-image: url(Header\ bg.svg);
+    background-repeat: no-repeat;
     display: inline-flex;
     height: 250px;
     padding: 289px 260px;
@@ -39,7 +47,7 @@
     color: var(--theme-1-neutrals-3, #344563);
 
     /* Body / 1 */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -50,7 +58,7 @@
     color: var(--primary-b-300, #7f8cff);
 
     /* Body / 2 - Bolder */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -59,17 +67,17 @@
   }
 
   .socialmediabox {
-    margin-top: 20px;
-    width: 170.167px;
-    height: 20px;
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 
   .name {
     color: var(--theme-1-neutrals-1, #091e42);
 
     /* Header / 1 */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -90,7 +98,7 @@
     text-align: center;
 
     /* Body / 3 - Bolder */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -127,7 +135,7 @@
 
   .title2 {
     color: var(--theme-1-neutrals-3, #344563);
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 505;
@@ -148,7 +156,7 @@
     color: var(--theme-1-neutrals-1, #091e42);
 
     /* Header / 2 */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -165,7 +173,7 @@
     padding: 8px 0;
     align-items: center;
     color: var(--theme-1-neutrals-3, #344563);
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -179,7 +187,7 @@
 
   .textcard {
     color: var(--theme-1-neutrals-6, #6b778c);
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -188,7 +196,7 @@
 
   .yearcard {
     color: var(--theme-1-neutrals-6, #6b778c);
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -206,7 +214,7 @@
     color: var(--neutrals-n-600, #344563);
 
     /* Body / 2 */
-    font-family: Poppins;
+    font-family: Poppin, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 450;
@@ -217,7 +225,7 @@
     color: var(--neutrals-n-600, #344563);
 
     /* Body / 2 */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -237,7 +245,7 @@
     color: var(--primary-b-400, #6070ff);
 
     /* Button / Small */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -261,7 +269,7 @@
     text-align: center;
 
     /* Button /Normal */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -293,7 +301,7 @@
     text-align: center;
 
     /* Button /Normal */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -301,12 +309,22 @@
     letter-spacing: 0.51px;
   }
 
+  .hand {
+    background-image: url(hand-cursor\ 1.png);
+    width: 67.999px;
+    height: 67.999px;
+
+    /* transform: rotate(-40.539deg); */
+  }
+
   .aboutsection {
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 166px;
     padding-left: 143px;
+    border-top-right-radius: 130px;
   }
 
   .aboutmyself {
@@ -338,7 +356,7 @@
     color: var(--theme-1-neutrals-1, #091e42);
 
     /* Header / 2 */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -351,31 +369,30 @@
     color: var(--neutrals-n-600, #344563);
 
     /* Body / 2 */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
   }
 
+  /*
   .socialmediabox {
     color: var(--primary-b-300, #7f8cff);
-
-    /* Body / 2 - Bolder */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
   }
-
+*/
   .icons {
     margin-top: 10px;
     display: flex;
     gap: 14px;
   }
 
-  .button2 {
+  .button8 {
     width: 162px;
     display: flex;
     padding: 12px;
@@ -387,7 +404,7 @@
     border: 1px solid var(--primary-b-400, #6070ff);
 
     /* Theme 1 / Button Normal  */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -446,6 +463,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+    background-repeat: no-repeat;
   }
 
   .heading {
@@ -522,9 +540,17 @@
     line-height: 24px; /* 141.176% */
     letter-spacing: 0.51px;
   }
+
+  .curve {
+    background-color: rgba(223, 225, 230, 1);
+  }
 }
 
 @media screen and (max-width: 375px) {
+  .listitems {
+    display: none;
+  }
+
   .worksdesktop {
     display: none;
   }
@@ -550,6 +576,9 @@
   }
 
   .header {
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-bottom-left-radius: 95px;
     width: 375px;
     background-image: url(./header-shapes\ mobile@2x.svg);
     display: inline-flex;
@@ -771,6 +800,8 @@
   }
 
   .aboutmyself {
+    background-color: #fff;
+    border-top-right-radius: 95px;
     display: inline-flex;
     padding: 114px 24px;
     flex-direction: column;
@@ -832,6 +863,8 @@
     align-items: flex-start;
     border-radius: 8px;
     gap: 16px;
+    margin-bottom: 24px;
+    margin-left: 8px;
   }
 
   .github {
@@ -907,6 +940,10 @@
     width: 290px;
   }
 
+  .curve {
+    background-color: rgba(223, 225, 230, 1);
+  }
+
   .language {
     width: 290px;
     color: #000;
@@ -972,7 +1009,12 @@
   }
 
   .contact {
-    background-image: url(contact\ form\ shapes-mobile.svg);
+    /* background-repeat: no-repeat; */
+
+    /* background-image: url(contact\ form\ shapes-mobile.svg); */
+
+    /* background-position: right; */
+    background-image: url(contact\ form\ shapes-mobile@2x.png);
     background-color: #6070ff;
     border-top-left-radius: 50px;
     width: 375px;
